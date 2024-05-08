@@ -1,0 +1,81 @@
+/* Home.module.css */
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+/* Styles related to markdown rendering */
+.markdownContent {
+  line-height: 1.75;
+}
+
+.markdownContent a {
+  color: #b13a3a;
+  font-weight: 500;
+}
+
+.markdownContent a:hover {
+  opacity: 0.8;
+}
+
+.markdownContent code {
+  color: #15cb19;
+  font-weight: 500;
+  white-space: pre-wrap !important;
+}
+
+.markdownContent ol,
+.markdownContent ul {
+  margin: 1rem;
+}
+
+.markdownContent ul {
+  list-style: none;
+  padding: 0;
+}
+
+.markdownContent li {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.markdownContent li:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.markdownContent h1,
+.markdownContent h2,
+.markdownContent h3 {
+  font-size: inherit;
+}
+
+/* Container for the chat interface */
+.chatContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: calc(100vh - 100px);
+  margin: 20px;
+  border: px solid #eaeaea;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Styles for mobile responsiveness */
+@media (max-width: 600px) {
+  .main {
+    padding: 1rem;
+    max-height: 90vh;
+  }
+
+  /* Adjustments for smaller screens can be added here */
+}
